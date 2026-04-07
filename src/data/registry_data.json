@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SK-001",
+    "name": "Ozzy Osbourne",
+    "type": "Digital Legacy",
+    "industry": "Music / Entertainment",
+    "state": "CA",
+    "verified": true,
+    "bio": "Digital Human Likeness Anchor - AI Replication Active.",
+    "halo_status": "Legendary"
+  },
+  {
+    "id": "SK-002",
+    "name": "Nehemiah M. Brown",
+    "type": "Sovereign Architect",
+    "industry": "IT / Blockchain",
+    "state": "PA",
+    "verified": true,
+    "bio": "Creator of KinYellow and HALO Ecosystem.",
+    "halo_status": "First Ancestor"
+  },
+  {
+    "id": "SK-003",
+    "name": "Eternal Rest Mortuary",
+    "type": "Business",
+    "industry": "Funeral / Death Care",
+    "state": "MN",
+    "verified": true,
+    "bio": "Certified KinYellow Graveyard Partner.",
+    "halo_status": "Active Node"
+  },
+  {
+    "id": "SK-004",
+    "name": "Jane Doe",
+    "type": "Citizen",
+    "industry": "Public Record",
+    "state": "NY",
+    "verified": false,
+    "bio": "Public directory listing - RealAIID pending.",
+    "halo_status": "Standard"
+  }
+]

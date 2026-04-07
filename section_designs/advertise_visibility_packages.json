@@ -1,0 +1,17 @@
+{
+  "description": "A three-tier pricing table. 'Basic' (Free), 'Professional' (Featured), and 'Elite' (National Header). Each tier is a card with a Kin Gold border for the 'Professional' (most popular) choice. Uses ui/tabs.tsx to toggle between Monthly and Yearly billing. Features are listed with icons and tooltips explaining 'Affiliate Flow'.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/card.tsx",
+    "ui/button.tsx",
+    "ui/tabs.tsx",
+    "ui/tooltip.tsx"
+  ]
+}

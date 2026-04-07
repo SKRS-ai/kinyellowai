@@ -1,0 +1,59 @@
+/* 1. The Core Gold Pin Pulse (Atmospheric) */
+@keyframes pulse-gold {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+/* 2. The High-Intensity "Breathing" Glow for HUD Cards */
+@keyframes kintsugi-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.6));
+  }
+}
+
+/* 3. Status Dot Pulse (Identity Verified) */
+@keyframes status-blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.2); }
+}
+
+/* CSS Classes to apply in your TSX files */
+
+.nexus-pin {
+  animation: pulse-gold 2s infinite;
+}
+
+.border-kintsugi-active {
+  animation: kintsugi-glow 4s infinite ease-in-out;
+}
+
+.status-dot {
+  animation: status-blink 1.5s infinite ease-in-out;
+}
+
+/* Mapbox Popup Styling Overrides to match Signature Design */
+.mapboxgl-popup-content {
+  background: rgba(18, 18, 18, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: white !important;
+  border-radius: 8px !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: rgba(255, 215, 0, 0.3) !important;
+}

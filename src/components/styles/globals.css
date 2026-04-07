@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure there are no empty brackets {} or random characters below */
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --kin-gold: #FFD700;
+  --kin-gold-muted: rgba(255, 215, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- KINTSUGI UTILITY CLASSES --- */
+
+/* 1. Glassmorphism Effect */
+.glass-panel {
+  background: rgba(255, 215, 0, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* 2. The Signature Gold Glow */
+.gold-glow {
+  box-shadow: 0 0 20px var(--kin-gold-muted);
+}
+
+/* 3. Terminal-Style Text */
+.text-terminal {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* 4. Custom Scrollbar for the Law Table */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--kin-gold-muted);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--kin-gold);
+}
+
+/* 5. Mapbox Hide Logo/Attribution for Cinematic Look */
+.mapboxgl-ctrl-bottom-right, 
+.mapboxgl-ctrl-bottom-left {
+  display: none !important;
+}
+
+/* 6. Glowing Animation for Identity Verification */
+@keyframes identity-verify {
+  0% { border-color: rgba(255, 215, 0, 0.2); }
+  50% { border-color: rgba(255, 215, 0, 0.6); }
+  100% { border-color: rgba(255, 215, 0, 0.2); }
+}
+
+.verified-border {
+  animation: identity-verify 3s infinite ease-in-out;
+}

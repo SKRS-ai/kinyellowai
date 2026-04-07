@@ -1,0 +1,17 @@
+{
+  "description": "A multi-column 'Mega-Footer'. Columns for 'Browse by State', 'Browse by Culture', 'For Businesses', and 'Company'. The bottom features a legal row and social icons. Includes a newsletter signup input (ui/input.tsx) with a 'Subscribe' button. Background is the Deep Slate (#0F172A) with light gray text for high contrast.",
+  "wordpress_providers": {
+    "contains_navmenu": true,
+    "contains_blog_posts": false,
+    "contains_form": true,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/navigation-menu.tsx",
+    "ui/input.tsx",
+    "ui/button.tsx",
+    "ui/separator.tsx"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "description": "A premium horizontally scrolling carousel of 'Gold-Tier' businesses. Each card features the business logo, a 5-star rating display, and a 'Top Verified' badge. The background of this section is a very faint Gold gradient (#FFFDF0 to #FFFFFF) to signify its 'sponsored' status without being intrusive. Includes 'Visit Website' and 'View Details' buttons on each card.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/carousel.tsx",
+    "ui/card.tsx",
+    "ui/badge.tsx"
+  ]
+}

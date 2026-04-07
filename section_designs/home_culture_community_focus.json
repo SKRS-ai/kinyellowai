@@ -1,0 +1,15 @@
+{
+  "description": "An aesthetic bento-box grid showcasing diverse categories. Large feature cards for 'Cultural Heritage', 'Gender & Pronouns', and 'Community Leaders'. Each card uses high-quality environmental photography (business owners in their shops) with a dark-to-transparent gradient overlay. Text is white, positioned at the bottom-left of the card. Micro-interaction: Images zoom slightly on hover.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/card.tsx",
+    "ui/aspect-ratio.tsx"
+  ]
+}

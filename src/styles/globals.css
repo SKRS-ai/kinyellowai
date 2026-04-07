@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  /* The Digital Kintsugi Border Effect */
+  .border-kintsugi {
+    border-image: linear-gradient(to bottom right, #FFD700, #B8860B, transparent, #FFD700) 1;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  }
+
+  /* Glowing Gold Pulse for Pins and HUDs */
+  @keyframes gold-pulse {
+    0%, 100% { box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700; }
+    50% { box-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700; }
+  }
+  .animate-gold-glow {
+    animation: gold-pulse 2s infinite ease-in-out;
+  }
+}

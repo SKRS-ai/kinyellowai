@@ -1,0 +1,15 @@
+{
+  "description": "A masonry layout of testimonial cards. Each card includes a small avatar, name, and a quote about how the directory's specific filters (like pronoun-based search) helped them find a safe and welcoming business. Quotes are in Georgia Italic for a personal feel, contrasted against the site's modern sans-serif.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/card.tsx",
+    "ui/avatar.tsx"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "A 3-column grid showing the latest articles. Each post card has a category badge (e.g., 'Small Biz Tips'), a clean thumbnail, and a read-time indicator. Typography is very clean with a focus on white space. This section uses 'contains_blog_posts: true' to pull from the WordPress CMS.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": true,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/card.tsx",
+    "ui/badge.tsx"
+  ]
+}

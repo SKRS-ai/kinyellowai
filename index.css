@@ -1,0 +1,21 @@
+﻿:root {
+  --kin-yellow: #FFD700;
+  --kin-black: #1A1A1A;
+  --kin-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--kin-black);
+  color: var(--kin-white);
+}
+
+.brand-header {
+  background-color: var(--kin-yellow);
+  color: var(--kin-black);
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}

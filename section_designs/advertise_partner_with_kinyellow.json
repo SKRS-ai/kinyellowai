@@ -1,0 +1,18 @@
+{
+  "description": "A multi-step onboarding form. Step 1: Business Basics. Step 2: Cultural/Identity Tags (using ui/toggle-group.tsx for multiple selections). Step 3: Ad Package Selection. The form is centered in a clean white card with a progress bar at the top to indicate completion status.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": true,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/form.tsx",
+    "ui/input.tsx",
+    "ui/toggle-group.tsx",
+    "ui/progress.tsx",
+    "ui/button.tsx"
+  ]
+}

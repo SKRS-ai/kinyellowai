@@ -1,0 +1,15 @@
+{
+  "description": "A 4-column organized grid of all 50 U.S. states. Instead of a simple list, each state is a small card with the state's 2-letter abbreviation in a bold, technical font (JetBrains Mono) and the full name below. On hover, the card displays the number of active listings in that state (e.g., '12,403 Listings'). The section uses a soft gray background (#F1F5F9) to distinguish it from the hero.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/card.tsx",
+    "ui/scroll-area.tsx"
+  ]
+}

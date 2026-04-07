@@ -1,0 +1,15 @@
+{
+  "description": "A split-layout CTA section. Left side features a data-visualization graphic (ui/chart.tsx) showing traffic growth. Right side contains a bold heading 'Scale with KinYellow' and a list of benefits (SEO, Affiliate Flow, Targeted Reach) using gold checkmarks. Two primary buttons: 'Get Started' and 'View Ad Packages'.",
+  "wordpress_providers": {
+    "contains_navmenu": false,
+    "contains_blog_posts": false,
+    "contains_form": false,
+    "contains_ecommerce_products": false,
+    "contains_ecommerce_categories": false,
+    "contains_ecommerce_tags": false
+  },
+  "components": [
+    "ui/button.tsx",
+    "ui/chart.tsx"
+  ]
+}
