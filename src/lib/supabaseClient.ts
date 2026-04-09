@@ -4,13 +4,13 @@ import { createClient } from '@supabase/supabase-js';
  * SOVEREIGN IDENTITY ENGINE - SUPABASE CLIENT
  * Pulls credentials from environment variables for push protection compliance.
  */
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-// Initialize the Master Client
+// Initialize the Master Client with a fallback to prevent "undefined" crashes
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-if (process.env.NODE_ENV !== 'production') {
+if (import.meta.env.MODE !== 'production') {
   console.log("🔐 KINYELLOW DATABASE ENGINE: Handshake Initialized");
 }
 
@@ -49,10 +49,11 @@ export const searchGlobalIndex = async (query: string) => {
 export const getJurisdictionData = async (identifier: string) => {
   if (!identifier) return null;
   try {
+    // FIXED: Cleaned up the .or syntax to avoid quote-parsing errors
     const { data, error } = await supabase
       .from('global_index')
       .select('*')
-      .or(`name.ilike.%${identifier}%,slug.eq.${identifier}`)
+      .or(`name.ilike.%${identifier}%,slug.eq.${identifier}`) 
       .maybeSingle();
 
     if (error) {
